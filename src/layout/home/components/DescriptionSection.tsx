@@ -10,12 +10,14 @@ const DescriptionSection = () => {
       </article>
 
       <article className="col-span-12 text-justify sm:col-span-9 md:col-span-10">
-        I'm a passionate full-stack developer focused on building dynamic and
-        responsive web applications using MERN. I enjoy creating clean, and
-        minimal websites. Lately, I've been diving into AI and Machine Learning,
+        I'm a a passionate developer focused on building dynamic and responsive
+        web applications using MERN. I enjoy creating clean, and minimal
+        websites. Lately, I've been diving into AI and Machine Learning,
         exploring tools like TensorFlow, Scikit-learn, and Keras to build fun
-        and meaningful projects. I’m especially interested in combining web
+        and meaningful projects. I&apos;m especially interested in combining web
         development with intelligent systems to create smarter user experiences.
+        <br />I am also exploring cyber security, and working my way through
+        Spring Boot, to create a more secure website
       </article>
     </section>
   );
