@@ -1,10 +1,12 @@
 const NotFound = () => {
   return (
-    <div className="text-xl lg:text-3xl min-h-screen flex justify-center items-center">
-      <div className="flex flex-col items-center gap-2">
-        <h1 className="text-5xl lg:text-7xl font-bold">404</h1>
-        <h2 className="font-semibold">Not Found!</h2>
-        <p className="text-lg lg:text-xl font-light">
+    <div className="flex justify-center items-center pt-20">
+      <div className="flex flex-col items-center gap-3">
+        <h1 className="text-7xl font-extrabold font-rocksalt mb-5">404</h1>
+        <h2 className="text-3xl lg:text-5xl font-semibold font-rocksalt">
+          Not Found!
+        </h2>
+        <p className="text-lg lg:text-xl font-light text-center">
           The Page you're trying to reach doesn't exist
         </p>
       </div>
