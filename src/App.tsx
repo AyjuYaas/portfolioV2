@@ -2,6 +2,8 @@ import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import NotFound from "./layout/notfound";
 import { navbarElements } from "./data/NavbarData";
+import { Suspense } from "react";
+import Loading from "./components/Loading";
 
 const App = () => {
   return (
@@ -9,13 +11,15 @@ const App = () => {
       <Navbar />
 
       <div className="min-h-screen w-full py-30 px-10">
-        <Routes>
-          {navbarElements.map(({ path, component: Component }, index) => (
-            <Route key={index} path={path} element={<Component />} />
-          ))}
+        <Suspense fallback={<Loading />}>
+          <Routes>
+            {navbarElements.map(({ path, component: Component }, index) => (
+              <Route key={index} path={path} element={<Component />} />
+            ))}
 
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Suspense>
       </div>
     </main>
   );
