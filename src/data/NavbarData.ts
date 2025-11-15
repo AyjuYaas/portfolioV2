@@ -1,6 +1,7 @@
 import Home from "@/layout/home";
 import Projects from "@/layout/projects";
 import CV from "@/layout/cv";
+import Contact from "@/layout/contact";
 
 export const navbarElements = [
   {
@@ -17,6 +18,11 @@ export const navbarElements = [
     title: "CV",
     path: "/CV",
     component: CV,
+  },
+  {
+    title: "Contact",
+    path: "/contact",
+    component: Contact,
   },
 ] satisfies {
   title: string;

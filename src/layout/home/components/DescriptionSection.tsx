@@ -1,6 +1,6 @@
 const DescriptionSection = () => {
   return (
-    <section className="mx-auto border-1 max-w-180 p-5 h-max rounded-md grid grid-cols-12 gap-4">
+    <section className="mx-auto border-1 dark:border-gray-800 border-gray-300 max-w-180 p-5 h-max rounded-md grid grid-cols-12 gap-4">
       <article className="col-span-12 mx-auto sm:col-span-3 md:col-span-2 lg:col-span-2">
         <img
           src="/profile.jpg"

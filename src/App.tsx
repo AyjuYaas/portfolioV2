@@ -8,7 +8,7 @@ const App = () => {
     <main>
       <Navbar />
 
-      <div className="min-h-screen w-full pt-20 px-10">
+      <div className="min-h-screen w-full py-30 px-10">
         <Routes>
           {navbarElements.map(({ path, component: Component }, index) => (
             <Route key={index} path={path} element={<Component />} />

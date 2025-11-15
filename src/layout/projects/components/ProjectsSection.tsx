@@ -3,7 +3,7 @@ import { ExternalLink } from "lucide-react";
 
 const ProjectsSection = () => {
   return (
-    <div className="w-full flex flex-col items-center gap-8 px-4 md:px-10">
+    <div className="w-full flex flex-col items-center gap-10 md:px-10 pt-5">
       {projectData.map((project, index) => (
         <article
           key={index}
@@ -16,7 +16,7 @@ const ProjectsSection = () => {
         >
           {/* Content */}
           <div className="flex flex-col px-4 gap-1 mt-2">
-            <h1 className="text-2xl font-semibold tracking-wide">
+            <h1 className="text-2xl tracking-widest font-chewy">
               {project.title}
             </h1>
             <h2 className="text-xl font-light">
@@ -49,7 +49,7 @@ const ProjectsSection = () => {
             {project.link && (
               <iframe
                 src={project.link}
-                className="w-full h-64 md:h-80 rounded-sm rounded-tl-none mt-3"
+                className="w-full h-64 md:h-80 rounded-md rounded-b-none mt-3"
               ></iframe>
             )}
           </div>
