@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Chewy&family=Rock+Salt&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -41,9 +42,14 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+@theme {
+  --font-chewy: "Chewy", cursive;
+  --font-rocksalt: "Rock Salt", cursive;
+}
+
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
+  --background: #e5e5e5;
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);

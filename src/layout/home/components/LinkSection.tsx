@@ -1,11 +1,13 @@
-import { socialLink } from "../data/socialLink";
+import { socialLink } from "@/data/socialLink";
 
 const LinkSection = () => {
   return (
-    <section className="mx-auto w-max">
-      <h1 className="font-bold text-xl mb-3 text-center">Find Me On</h1>
+    <section className="mx-auto w-max mt-5">
+      <h1 className="font-extrabold font-rocksalt tracking-widest text-xl mb-3 text-center">
+        Find Me On
+      </h1>
 
-      <article className="flex gap-5">
+      <article className="flex gap-8">
         {socialLink.map((social) => (
           <a key={social.id} href={social.link} target="_blank">
             <img

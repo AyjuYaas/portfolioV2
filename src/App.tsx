@@ -1,5 +1,7 @@
+import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Home from "./layout/home";
+import NotFound from "./layout/notfound";
+import { navbarElements } from "./data/NavbarData";
 
 const App = () => {
   return (
@@ -7,7 +9,13 @@ const App = () => {
       <Navbar />
 
       <div className="min-h-screen w-full pt-20 px-10">
-        <Home />
+        <Routes>
+          {navbarElements.map(({ path, component: Component }, index) => (
+            <Route key={index} path={path} element={<Component />} />
+          ))}
+
+          <Route path="*" element={<NotFound />} />
+        </Routes>
       </div>
     </main>
   );
