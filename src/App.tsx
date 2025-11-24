@@ -10,7 +10,7 @@ const App = () => {
     <main>
       <Navbar />
 
-      <div className="min-h-screen w-full py-30 px-10">
+      <div className="min-h-dvh w-full pt-25 pb-10 px-10">
         <Suspense fallback={<Loading />}>
           <Routes>
             {navbarElements.map(({ path, component: Component }, index) => (
